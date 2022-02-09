@@ -27,5 +27,10 @@ public class collisionScript : MonoBehaviour
             Destroy(gameObject);
             Score += 1;
         }
+
+        else if(collision.gameObject.tag == "Obstacle")
+        {
+            Score += 1;
+        }
     }
 }
